@@ -46,6 +46,21 @@ body {
     background-color: #056fba;
     padding-top: 10px;
     padding-left: 25px;
+    box-shadow: 5px 5px 2px #292929;
+    transition: width .25s, height .25s;
+}
+
+.newItem:hover {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 410px;
+    height: 35px;
+    margin: 20px auto;
+    background-color: #056fba;
+    padding-top: 10px;
+    padding-left: 25px;
+    box-shadow: 10px 10px 5px #292929;
+
 }
 
 .doneTask {
@@ -53,6 +68,13 @@ body {
 }
 
 .done-true {
+    text-decoration: line-through;
+    color: #0a2235;
+    background-color: #5a5a5a;
+    opacity: .6;
+}
+
+.done-true:hover {
     text-decoration: line-through;
     color: #0a2235;
     background-color: #5a5a5a;
