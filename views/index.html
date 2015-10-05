@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="taskApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="javascripts/angular/angular.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="javascripts/angular/angular.min.js.map" type="text/javascript"></script>-->
+    <script src="javascripts/app.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body ng-controller="MainController">
+
+<div class="mainContent">
+<!--<h1>I will be a TASK TRACKER someday</h1>-->
+    <img class="headImage" src="images/tasktracker.png" />
+    <div class="topList">
+
+                    <!--<h3 class="newTask">New Task:</h3>-->
+
+                    <input class="inputBox" type="text" placeholder="enter new task" ng-model="freshTask">
+
+                    <button class="createStyle" ng-click="add(freshTask)">Create Task</button><br />
+
+    </div>
+
+<div class="masterList" ng-repeat="newitem in newTaskList">
+
+    <div class="newItem done-{{newitem.done}}" ng-class="{'doneTask': isActive}">
+
+            <span class="done-{{newitem.done}}">
+
+                {{newitem.item}}
+
+                <div class="completeItem"  ng-model="newitem.done">
+                    <input class="checkBox" type="checkbox" ng-model="newitem.done" ng-click="sort()">
+                </div>
+
+            </span>
+
+    </div>
+
+
+</div>
+    <div class="buttonClear">
+
+        <button class="removeClear" ng-click="removeDone()">clear completed</button>
+
+    </div>
+</div>
+
+</body>
+
+
+</html>
+

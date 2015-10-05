@@ -1,0 +1,142 @@
+body {
+    padding: 10px;
+    font: 20px Helvetica, sans-serif;
+    background-image: url('../images/solarized_darcula.jpg');
+}
+
+a {
+  color: #00B7FF;
+}
+
+.mainContent {
+    margin: 0 auto;
+
+    padding: 30px;
+    background-image: url('../images/transparentbg.png');
+
+
+    border-radius: 5px;
+    box-shadow: 14px 24px 63px 9px rgba(0, 0, 0, 0.294);
+    width: 500px;
+    min-height: 500px;
+
+
+
+}
+
+.topList {
+    margin: 10px 100px;
+    width: 330px;
+    height: 60px;
+    display: block;
+}
+
+.completeItem {
+    width: 75px;
+    height: 25px;
+    border-left: solid 1px;
+    float: right;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.completeItem:hover {
+    border-left: solid 1px;
+    float: right;
+    text-align: center;
+}
+
+.newItem {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: #056fba;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.doneTask {
+    text-decoration: line-through;
+}
+
+.done-true {
+    text-decoration: line-through;
+    color: #0a2235;
+    background-color: #5a5a5a;
+    opacity: .6;
+    /*background-color: #0d3349;*/
+}
+
+.checkBox {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.createStyle {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color: rgb(55, 237, 136);
+    width: 150px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.createStyle:hover {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color: rgb(27, 237, 3);
+    width: 150px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.removeClear {
+    font-size: 14px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color: rgba(255, 146, 41, 0.84);
+    width: 150px;
+    height: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.removeClear:hover {
+    font-size: 14px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color: rgba(255, 52, 8, 0.84);
+    width: 150px;
+    height: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.inputBox{
+    margin-top: 5px;
+    height: 25px;
+    width: 120px;
+    font-size: 14px;
+
+}
+
+.headImage {
+    margin: 20px auto 40px auto;
+    display: block;
+}
+
+.buttonClear {
+    text-align: center;
+
+
+}
