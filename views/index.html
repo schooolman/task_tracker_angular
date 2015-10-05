@@ -12,43 +12,44 @@
 
 <body ng-controller="MainController">
 
-<div class="mainContent">
+    <div class="mainContent">
 
-    <img class="headImage" src="images/tasktracker.png" />
+        <img class="headImage" src="images/tasktracker.png" />
 
-    <div class="topList">
+        <div class="topList">
 
 
-                    <input class="inputBox" type="text" placeholder="enter new task" ng-model="freshTask">
+                        <input class="inputBox" type="text" placeholder="enter new task" ng-model="freshTask">
 
-                    <button class="createStyle" ng-click="add(freshTask)">Create Task</button><br />
+                        <button class="createStyle" ng-click="add(freshTask)">Create Task</button><br />
 
+        </div>
+
+        <div class="masterList" ng-repeat="newitem in newTaskList">
+
+            <div class="newItem done-{{newitem.done}}" ng-class="{'doneTask': isActive}">
+
+                    <span class="done-{{newitem.done}}">
+
+                        {{newitem.item}}
+
+                        <div class="completeItem">
+                            <input class="checkBox" type="checkbox" ng-model="newitem.done" ng-click="sort()">
+                        </div>
+
+                    </span>
+
+            </div>
+
+
+        </div>
+
+            <div class="buttonClear">
+
+                <button class="removeClear" ng-click="removeDone()">clear completed</button>
+
+            </div>
     </div>
-
-<div class="masterList" ng-repeat="newitem in newTaskList">
-
-    <div class="newItem done-{{newitem.done}}" ng-class="{'doneTask': isActive}">
-
-            <span class="done-{{newitem.done}}">
-
-                {{newitem.item}}
-
-                <div class="completeItem">
-                    <input class="checkBox" type="checkbox" ng-model="newitem.done" ng-click="sort()">
-                </div>
-
-            </span>
-
-    </div>
-
-
-</div>
-    <div class="buttonClear">
-
-        <button class="removeClear" ng-click="removeDone()">clear completed</button>
-
-    </div>
-</div>
 
 </body>
 
