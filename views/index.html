@@ -13,11 +13,11 @@
 <body ng-controller="MainController">
 
 <div class="mainContent">
-<!--<h1>I will be a TASK TRACKER someday</h1>-->
+
     <img class="headImage" src="images/tasktracker.png" />
+
     <div class="topList">
 
-                    <!--<h3 class="newTask">New Task:</h3>-->
 
                     <input class="inputBox" type="text" placeholder="enter new task" ng-model="freshTask">
 
@@ -33,7 +33,7 @@
 
                 {{newitem.item}}
 
-                <div class="completeItem"  ng-model="newitem.done">
+                <div class="completeItem">
                     <input class="checkBox" type="checkbox" ng-model="newitem.done" ng-click="sort()">
                 </div>
 

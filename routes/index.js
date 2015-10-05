@@ -16,9 +16,6 @@ router.get('/', function(req, res, next) {
 router.get('/taskList', function(request, response, next){
     console.log("checking");
     response.send(taskList);
-
-    //res.send(path.join);
-    //var task = JSON.parse
     //console.log("task list route" + taskList);
 });
 
@@ -38,10 +35,3 @@ router.get('/addTask', function(request, response, next){
 
 module.exports = router;
 
-
-//var kitty = new Cat({name: request.body.name});
-//response.send(kitty.toJSON());
-//next();
-function Task(item) {
-    this.item = item;
-}
