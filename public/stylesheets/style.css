@@ -53,13 +53,13 @@ body {
 .newItem:hover {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
-    width: 410px;
-    height: 35px;
+    width: 403px;
+    height: 32px;
     margin: 20px auto;
     background-color: #056fba;
     padding-top: 10px;
     padding-left: 25px;
-    box-shadow: 10px 10px 5px #292929;
+    box-shadow: 7px 7px 2px #292929;
 
 }
 
