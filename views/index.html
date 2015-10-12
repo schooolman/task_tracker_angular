@@ -21,7 +21,7 @@
 
                         <input class="inputBox" type="text" placeholder="enter new task" ng-model="freshTask">
 
-                        <button class="createStyle" ng-click="add(freshTask)">Create Task</button><br />
+                        <button class="createStyle" ng-click="addData()">Create Task</button><br />
 
         </div>
 
@@ -34,7 +34,7 @@
                         {{newitem.item}}
 
                         <div class="completeItem">
-                            <input class="checkBox" type="checkbox" ng-model="newitem.done" ng-click="sort()">
+                            <input class="checkBox" type="checkbox" ng-model="newitem.done" ng-click="changeDataBoolean($index); sort($index)">
                         </div>
 
                     </span>
@@ -46,7 +46,7 @@
 
             <div class="buttonClear">
 
-                <button class="removeClear" ng-click="removeDone()">clear completed</button>
+                <button class="removeClear" ng-click="removeAllDone()">clear completed</button>
 
             </div>
     </div>
